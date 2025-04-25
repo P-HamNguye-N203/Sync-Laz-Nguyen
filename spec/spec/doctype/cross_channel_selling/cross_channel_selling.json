@@ -1,0 +1,245 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:item_code",
+ "creation": "2025-04-16 11:28:55.250946",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "item_name",
+  "brand",
+  "quantity",
+  "package_weight",
+  "package_width",
+  "package_length",
+  "package_height",
+  "column_break_sioe",
+  "notify",
+  "lazada",
+  "tiktok_shop",
+  "shopee",
+  "tiki",
+  "description",
+  "section_break_vqla",
+  "item_info",
+  "section_break_mmqd",
+  "lazada_category",
+  "lazada_attributes",
+  "section_break_wual",
+  "tiktok_shop_category",
+  "tiktok_attribute",
+  "lazada_tab",
+  "tiktok_shop_tab",
+  "shopee_tab",
+  "shopee_attributes",
+  "tiki_tab",
+  "tiki_attributes"
+ ],
+ "fields": [
+  {
+   "description": "Ch\u1ecdn s\u1ea3n ph\u1ea9m \u0111\u0103ng b\u00e1n",
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "reqd": 1,
+   "set_only_once": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_sioe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "lazada",
+   "fieldtype": "Check",
+   "label": "Lazada"
+  },
+  {
+   "default": "0",
+   "fieldname": "tiktok_shop",
+   "fieldtype": "Check",
+   "label": "TikTok Shop"
+  },
+  {
+   "default": "0",
+   "fieldname": "shopee",
+   "fieldtype": "Check",
+   "label": "Shopee"
+  },
+  {
+   "default": "0",
+   "fieldname": "tiki",
+   "fieldtype": "Check",
+   "label": "Tiki"
+  },
+  {
+   "depends_on": "eval:doc.lazada && doc.item_code",
+   "fieldname": "lazada_tab",
+   "fieldtype": "Tab Break",
+   "label": "Lazada"
+  },
+  {
+   "fieldname": "lazada_attributes",
+   "fieldtype": "Table",
+   "label": "Lazada Attributes",
+   "options": "PLatform Attributes Value"
+  },
+  {
+   "depends_on": "eval:doc.tiktok_shop && doc.item_code",
+   "fieldname": "tiktok_shop_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tiktok Shop"
+  },
+  {
+   "depends_on": "eval:doc.shopee && doc.item_code",
+   "fieldname": "shopee_tab",
+   "fieldtype": "Tab Break",
+   "label": "Shopee"
+  },
+  {
+   "fieldname": "shopee_attributes",
+   "fieldtype": "Data",
+   "label": "Shopee Attributes"
+  },
+  {
+   "description": "Unit : kg",
+   "fieldname": "package_weight",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Package Weight",
+   "reqd": 1
+  },
+  {
+   "description": "Unit : cm",
+   "fieldname": "package_width",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Package Width",
+   "reqd": 1
+  },
+  {
+   "description": "Unit: cm",
+   "fieldname": "package_length",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Package Length",
+   "reqd": 1
+  },
+  {
+   "description": "Unit: cm",
+   "fieldname": "package_height",
+   "fieldtype": "Data",
+   "label": "Package Height",
+   "reqd": 1
+  },
+  {
+   "fieldname": "lazada_category",
+   "fieldtype": "Link",
+   "label": "Lazada Category",
+   "options": "Market Category"
+  },
+  {
+   "fieldname": "notify",
+   "fieldtype": "HTML",
+   "label": "Warning",
+   "options": "<p class=\"alert alert-warning\">H\u00e3y ch\u1ecdn Item tr\u01b0\u1edbc khi ch\u1ecdn N\u1ec1n t\u1ea3ng </p>"
+  },
+  {
+   "fieldname": "tiktok_shop_category",
+   "fieldtype": "Link",
+   "label": "Tiktok Shop Category",
+   "options": "Market Category"
+  },
+  {
+   "fieldname": "tiktok_attribute",
+   "fieldtype": "Table",
+   "label": "Tiktok Attribute",
+   "options": "PLatform Attributes Value"
+  },
+  {
+   "depends_on": "eval:doc.tiki && doc.item_code",
+   "fieldname": "tiki_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tiki"
+  },
+  {
+   "fieldname": "tiki_attributes",
+   "fieldtype": "Data",
+   "label": "Tiki Attributes"
+  },
+  {
+   "fieldname": "section_break_vqla",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "item_info",
+   "fieldtype": "Table",
+   "label": "Item Info",
+   "options": "Item Info"
+  },
+  {
+   "fieldname": "brand",
+   "fieldtype": "Data",
+   "label": "Brand",
+   "reqd": 1
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "label": "Quantity"
+  },
+  {
+   "description": "T\u00ean s\u1ea3n ph\u1ea9m khi \u0111\u01b0\u1ee3c \u0111\u0103ng l\u00ean s\u00e0n th\u01b0\u01a1ng m\u1ea1i \u0111i\u1ec7n t\u1eed",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "depends_on": "eval:doc.lazada && doc.item_code",
+   "fieldname": "section_break_mmqd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.tiktok_shop && doc.item_code",
+   "fieldname": "section_break_wual",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-21 15:55:56.505706",
+ "modified_by": "Administrator",
+ "module": "spec",
+ "name": "Cross Channel Selling",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

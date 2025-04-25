@@ -1,0 +1,124 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:name_view",
+ "creation": "2025-04-08 14:54:27.864058",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_bpgb",
+  "name_view",
+  "market_platform",
+  "category_name",
+  "category_id",
+  "premission_status",
+  "is_leaf_category",
+  "lft",
+  "rgt",
+  "is_group",
+  "old_parent",
+  "parent_market_category"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_bpgb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "Market Category"
+  },
+  {
+   "fieldname": "parent_market_category",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Parent Market Category",
+   "options": "Market Category"
+  },
+  {
+   "fieldname": "name_view",
+   "fieldtype": "Data",
+   "label": "Name View",
+   "unique": 1
+  },
+  {
+   "fieldname": "market_platform",
+   "fieldtype": "Select",
+   "label": "Market Platform",
+   "options": "lazada\ntiktok shop"
+  },
+  {
+   "fieldname": "category_name",
+   "fieldtype": "Data",
+   "label": "Category Name"
+  },
+  {
+   "fieldname": "category_id",
+   "fieldtype": "Data",
+   "label": "Category ID"
+  },
+  {
+   "fieldname": "premission_status",
+   "fieldtype": "Data",
+   "label": "Premission Status"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_leaf_category",
+   "fieldtype": "Check",
+   "label": "Is Leaf Category"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_tree": 1,
+ "links": [],
+ "modified": "2025-04-08 15:03:45.221350",
+ "modified_by": "Administrator",
+ "module": "spec",
+ "name": "Market Category",
+ "naming_rule": "By fieldname",
+ "nsm_parent_field": "parent_market_category",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

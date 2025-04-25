@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-28 13:47:47.626641",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "spec_name",
+  "value",
+  "data_type",
+  "is_custom"
+ ],
+ "fields": [
+  {
+   "fieldname": "spec_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Specification Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "value",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Value",
+   "reqd": 1
+  },
+  {
+   "fieldname": "data_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Data type",
+   "options": "Text\nNumber\nBoolean"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_custom",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Is Custom"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-03-28 13:49:28.016595",
+ "modified_by": "Administrator",
+ "module": "spec",
+ "name": "Item Specification Line",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:attribute_id",
+ "creation": "2025-04-03 14:52:57.949718",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "marketplace_attribute_section",
+  "marketplace",
+  "attribute_id",
+  "attribute_name",
+  "type",
+  "is_customizable",
+  "is_variants",
+  "label"
+ ],
+ "fields": [
+  {
+   "fieldname": "marketplace_attribute_section",
+   "fieldtype": "Section Break",
+   "label": "Marketplace Attribute"
+  },
+  {
+   "fieldname": "marketplace",
+   "fieldtype": "Select",
+   "label": "marketplace",
+   "options": "TikTok Shop\nLazada\nShopee"
+  },
+  {
+   "fieldname": "attribute_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Attribute Id",
+   "unique": 1
+  },
+  {
+   "fieldname": "attribute_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Attribute Name"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "Sales Property\nProduct Property"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_customizable",
+   "fieldtype": "Check",
+   "label": "is_customizable"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_variants",
+   "fieldtype": "Check",
+   "label": "is Variants"
+  },
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Label"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-10 13:48:27.892010",
+ "modified_by": "Administrator",
+ "module": "spec",
+ "name": "Marketplace Attribute",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

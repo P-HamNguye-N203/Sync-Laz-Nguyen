@@ -1,0 +1,39 @@
+{
+    "actions": [],
+    "allow_rename": 1,
+    "creation": "2025-03-28 04:37:40.397232",
+    "doctype": "DocType",
+    "editable_grid": 1,
+    "engine": "InnoDB",
+    "field_order": [
+     "value_id",
+     "value_name"
+    ],
+    "fields": [
+     {
+      "fieldname": "value_id",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Value ID"
+     },
+     {
+      "fieldname": "value_name",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Value Name"
+     }
+    ],
+    "grid_page_length": 50,
+    "index_web_pages_for_search": 1,
+    "istable": 1,
+    "links": [],
+    "modified": "2025-03-28 04:39:54.958632",
+    "modified_by": "Administrator",
+    "module": "spec",
+    "name": "Marketplace Attribute Value",
+    "owner": "Administrator",
+    "permissions": [],
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": []
+   }

@@ -1,0 +1,120 @@
+{
+    "actions": [],
+    "allow_rename": 1,
+    "autoname": "field:category_id",
+    "creation": "2025-03-29 03:09:19.992757",
+    "doctype": "DocType",
+    "engine": "InnoDB",
+    "field_order": [
+     "marketplace",
+     "category_name",
+     "category_id",
+     "is_leaf",
+     "permission_status",
+     "lft",
+     "rgt",
+     "is_group",
+     "old_parent",
+     "parent_marketplace_category"
+    ],
+    "fields": [
+     {
+      "fieldname": "category_id",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Category ID",
+      "unique": 1
+     },
+     {
+      "fieldname": "category_name",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Category Name"
+     },
+     {
+      "default": "0",
+      "description": "X\u00e1c \u0111\u1ecbnh \u0111\u00e2y c\u00f3 ph\u1ea3i danh m\u1ee5c cu\u1ed1i c\u00f9ng kh\u00f4ng",
+      "fieldname": "is_leaf",
+      "fieldtype": "Check",
+      "label": "Is Leaf Category"
+     },
+     {
+      "description": "Tr\u1ea1ng th\u00e1i quy\u1ec1n (AVAILABLE, INVITE_ONLY, v.v.)",
+      "fieldname": "permission_status",
+      "fieldtype": "Data",
+      "label": "Permission Status"
+     },
+     {
+      "fieldname": "lft",
+      "fieldtype": "Int",
+      "hidden": 1,
+      "label": "Left",
+      "no_copy": 1,
+      "read_only": 1
+     },
+     {
+      "fieldname": "rgt",
+      "fieldtype": "Int",
+      "hidden": 1,
+      "label": "Right",
+      "no_copy": 1,
+      "read_only": 1
+     },
+     {
+      "default": "0",
+      "fieldname": "is_group",
+      "fieldtype": "Check",
+      "label": "Is Group"
+     },
+     {
+      "fieldname": "old_parent",
+      "fieldtype": "Link",
+      "label": "Old Parent",
+      "options": "Marketplace Category"
+     },
+     {
+      "fieldname": "parent_marketplace_category",
+      "fieldtype": "Link",
+      "ignore_user_permissions": 1,
+      "label": "Parent Marketplace Category",
+      "options": "Marketplace Category"
+     },
+     {
+      "fieldname": "marketplace",
+      "fieldtype": "Select",
+      "in_list_view": 1,
+      "label": "Marketplace",
+      "options": "TikTok Shop\nLazada"
+     }
+    ],
+    "grid_page_length": 50,
+    "index_web_pages_for_search": 1,
+    "is_tree": 1,
+    "links": [],
+    "modified": "2025-03-30 15:50:44.099674",
+    "modified_by": "Administrator",
+    "module": "spec",
+    "name": "Marketplace Category",
+    "naming_rule": "By fieldname",
+    "nsm_parent_field": "parent_marketplace_category",
+    "owner": "Administrator",
+    "permissions": [
+     {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+     }
+    ],
+    "search_fields": "category_name, category_id",
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": [],
+    "title_field": "category_name"
+   }

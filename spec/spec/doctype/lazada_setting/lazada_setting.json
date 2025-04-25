@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-01 15:19:37.521373",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "lazada_setting",
+  "app_key",
+  "access_token",
+  "app_secret",
+  "refresh_token",
+  "time_now",
+  "access_token_expiry",
+  "refresh_token_expiry"
+ ],
+ "fields": [
+  {
+   "fieldname": "lazada_setting",
+   "fieldtype": "Section Break",
+   "label": "Lazada Seting"
+  },
+  {
+   "fieldname": "app_key",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "App Key",
+   "reqd": 1
+  },
+  {
+   "fieldname": "access_token",
+   "fieldtype": "Data",
+   "label": "Access Token",
+   "reqd": 1
+  },
+  {
+   "fieldname": "app_secret",
+   "fieldtype": "Data",
+   "label": "App Secret",
+   "reqd": 1
+  },
+  {
+   "fieldname": "refresh_token",
+   "fieldtype": "Data",
+   "label": "Refresh Token",
+   "reqd": 1
+  },
+  {
+   "fieldname": "time_now",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Time Now"
+  },
+  {
+   "fieldname": "access_token_expiry",
+   "fieldtype": "Data",
+   "label": "Access Token Expiry"
+  },
+  {
+   "fieldname": "refresh_token_expiry",
+   "fieldtype": "Data",
+   "label": "Refresh Token Expiry"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-04 15:10:21.592808",
+ "modified_by": "Administrator",
+ "module": "spec",
+ "name": "Lazada Setting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

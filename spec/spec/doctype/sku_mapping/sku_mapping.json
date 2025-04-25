@@ -1,0 +1,69 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-14 11:53:12.378780",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sku_id",
+  "shop_sku",
+  "seller_sku",
+  "marketplatform"
+ ],
+ "fields": [
+  {
+   "fieldname": "sku_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SKU Id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "shop_sku",
+   "fieldtype": "Data",
+   "label": "Shop SKU",
+   "reqd": 1
+  },
+  {
+   "fieldname": "seller_sku",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Seller SKU",
+   "options": "Item",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "marketplatform",
+   "fieldtype": "Select",
+   "label": "Market Platform",
+   "options": "Lazada\nTiktok Shop"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-14 12:16:21.065656",
+ "modified_by": "Administrator",
+ "module": "spec",
+ "name": "SKU Mapping",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

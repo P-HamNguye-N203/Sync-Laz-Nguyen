@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-28 13:43:48.940856",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "specification_template_line_section",
+  "spec_name",
+  "data_type",
+  "spec_value"
+ ],
+ "fields": [
+  {
+   "fieldname": "specification_template_line_section",
+   "fieldtype": "Section Break",
+   "label": "Specification Template Line"
+  },
+  {
+   "fieldname": "spec_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Spec Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "data_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Data Type"
+  },
+  {
+   "fieldname": "spec_value",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Spec Value"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-04-03 13:34:11.257683",
+ "modified_by": "Administrator",
+ "module": "spec",
+ "name": "Specification Template Line",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

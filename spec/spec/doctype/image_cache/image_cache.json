@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-04 16:37:27.664006",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "image_path",
+  "uri",
+  "use_case",
+  "image_hash",
+  "last_updated"
+ ],
+ "fields": [
+  {
+   "fieldname": "image_path",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Image Path"
+  },
+  {
+   "fieldname": "use_case",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Use Case"
+  },
+  {
+   "fieldname": "last_updated",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Last Updated"
+  },
+  {
+   "fieldname": "image_hash",
+   "fieldtype": "Data",
+   "label": "Image Hash"
+  },
+  {
+   "fieldname": "uri",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "UrI"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-11 10:43:36.573310",
+ "modified_by": "Administrator",
+ "module": "spec",
+ "name": "Image Cache",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
